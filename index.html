@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>TweetBeat</title>
+<!--Ambient Background Sound Script-->
+<script language="javascript" type="text/javascript">
+function playSound(soundfile) {
+  document.getElementById("ambaudio").innerHTML=
+    "<embed src=\""+soundfile+"\" hidden=\"true\" autostart=\"true\" loop=\"false\" />";
+}
+</script>
+<script src="tb.js" type="text/javascript"></script>
+<link rel="stylesheet" href="ss1.css" type="text/css" media="screen" />
+</head>
+<body>
+<div id="banner">
+<h1>TweetBeat</h1>
+<div id="stopBG"><a href="#s" onClick=playSound('')>STOP</a></div>
+</div>
+<div id="container">
+<!--Backgrounds-->
+<span id="ambaudio"></span>
+<a href="#a" onClick=playSound('audio/NorwichTown.wav')><img id="fire" src="img/fire.png" /></a>
+<a href="#b" onClick=playSound('audio/Train.wav')><img id="water" src="img/water.png" /></a>
+<a href="#c" onClick=playSound('audio/bass.wav')><img id="earth" src="img/earth.png" /></a>
+<a href="#a" onClick=playSound('audio/Wind.wav')><img id="air" src="img/air.png" /></a>
+<!--SoundSelectors-->
+<div id="soundselect">
+<!--Frame-->
+<div id="frame">
+<img id="frame1" src="img/frame.png" />
+</div>
+<!--Buttons-->
+<div id="1"><img id="img1" src="img/buttonblue_v2.png" alt="button" onMouseDown="buttonDepress('img1')" onMouseUp="gridAction('img1')" /></div>
+
+<div id="2"><img id="img2" src="img/buttonblue_v2.png" alt="button" onMouseDown="buttonDepress('img2')" onMouseUp="gridAction('img2')" /></div>
+<div id="3"><img id="img3" src="img/buttonblue_v2.png" alt="button" onMouseDown="buttonDepress('img3')" onMouseUp="gridAction('img3')" /></div>
+
+<div id="4"><img id="img4" src="img/buttonblue_v2.png" alt="button" onMouseDown="buttonDepress('img4')" onMouseUp="gridAction('img4')" /></div>
+<div id="5"><img id="img5" src="img/buttonblue_v2.png" alt="button" onMouseDown="buttonDepress('img5')" onMouseUp="gridAction('img5')" /></div>
+<div id="6"><img id="img6" src="img/buttonblue_v2.png" alt="button" onMouseDown="buttonDepress('img6')" onMouseUp="gridAction('img6')" /></div>
+
+<div id="7"><img id="img7" src="img/buttonblue_v2.png" alt="button" onMouseDown="buttonDepress('img7')" onMouseUp="gridAction('img7')" /></div>
+<div id="8"><img id="img8" src="img/buttonblue_v2.png" alt="button" onMouseDown="buttonDepress('img8')" onMouseUp="gridAction('img8')" /></div>
+<div id="9"><img id="img9" src="img/buttonblue_v2.png" alt="button" onMouseDown="buttonDepress('img9')" onMouseUp="gridAction('img9')" /></div>
+<div id="10"><img id="img10" src="img/buttonblue_v2.png" alt="button" onMouseDown="buttonDepress('img10')" onMouseUp="gridAction('img10')" /></div>
+
+<div id="11"><img id="img11" src="img/buttonblue_v2.png" alt="button" onMouseDown="buttonDepress('img11')" onMouseUp="gridAction('img11')" /></div>
+<div id="12"><img id="img12" src="img/buttonblue_v2.png" alt="button" onMouseDown="buttonDepress('img12')" onMouseUp="gridAction('img12')" /></div>
+<div id="13"><img id="img13" src="img/buttonblue_v2.png" alt="button" onMouseDown="buttonDepress('img13')" onMouseUp="gridAction('img13')" /></div>
+
+<div id="14"><img id="img14" src="img/buttonblue_v2.png" alt="button" onMouseDown="buttonDepress('img14')" onMouseUp="gridAction('img14')" /></div>
+<div id="15"><img id="img15" src="img/buttonblue_v2.png" alt="button" onMouseDown="buttonDepress('img15')" onMouseUp="gridAction('img15')" /></div>
+
+<div id="16"><img id="img16" src="img/buttonblue_v2.png" alt="button" onMouseDown="buttonDepress('img16')" onMouseUp="gridAction('img16')" /></div>
+
+<!--End of Buttons-->
+</div>
+<!--End of Container-->
+</div>
+<!--AudioFiles-->
+<div class="nodisplay">
+<audio id="s1" src="audio/bass.wav" autobuffer="autobuffer" preload="true"></audio>
+<audio id="" src="audio/gt.wav" autobuffer="autobuffer" preload="true"></audio>
+<audio id="" src="audio/gt1.wav" autobuffer="autobuffer" preload="true"></audio>
+<audio id="" src="audio/gt3.wav" autobuffer="autobuffer" preload="true"></audio>
+<audio id="" src="audio/oh1.wav" autobuffer="autobuffer" preload="true"></audio>
+</div>
+</body>
+</html>
